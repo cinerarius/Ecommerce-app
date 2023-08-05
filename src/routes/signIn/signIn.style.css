@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sign-in-btn {
+    @apply bg-blue-500 rounded-xl px-4 py-2 text-center font-sans font-bold text-white my-4;
+  }
+}

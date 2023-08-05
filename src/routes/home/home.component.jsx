@@ -1,6 +1,5 @@
 import "./home.style.css";
 import CardList from "../../components/card-list/card-list.component";
-import Header from "../../components/header/header.component";
 
 const Home = () => {
   const categories = [
@@ -19,8 +18,6 @@ const Home = () => {
   ];
   return (
     <div>
-      <h1 className="title">Ecommerce App</h1>
-      <Header />
       <CardList categoryArray={categories} />
     </div>
   );
