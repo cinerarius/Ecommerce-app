@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-list {
+    @apply flex items-center justify-center;
+  }
+  .category-container {
+    @apply grid grid-cols-1 gap-6 md:grid-cols-3 p-5 md:gap-5;
+  }
+}

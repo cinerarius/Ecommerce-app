@@ -1,30 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .title {
-    @apply font-sans font-bold text-3xl text-center;
-  }
-  .navbar {
-    @apply flex items-center justify-center flex-col m-4 space-y-2 md:flex-row md:items-end md:justify-end md:space-x-4 md:space-y-0 md:m-8;
-  }
-  .card-list {
-    @apply flex items-center justify-center;
-  }
-  .category-container {
-    @apply grid grid-cols-1 gap-6 md:grid-cols-3 p-5 md:gap-5;
-  }
-  .category-image {
-    @apply h-80 w-80 object-cover object-top hover:scale-110 duration-700;
-  }
-  .category-body-container {
-    @apply flex flex-col items-center justify-center;
-  }
-  .content {
-    @apply bg-slate-300 absolute mb-28 p-3 outline outline-1 opacity-70 hover:opacity-100;
-  }
-  .category-title {
-    @apply font-sans font-semibold text-xl text-center;
-  }
-}
