@@ -6,10 +6,22 @@
   .form-container {
     @apply mx-2 my-4;
   }
-}
-
-@layer base {
-  form {
-    @apply flex flex-col;
+  .sign-in-form {
+    @apply flex flex-col space-y-4;
+  }
+  .form-title {
+    @apply font-sans font-bold text-2xl my-4;
+  }
+  .field-container {
+    @apply flex flex-col mx-6;
+  }
+  .inp {
+    @apply border-b-2 my-4 focus:outline-none;
+  }
+  .sign-up-btn {
+    @apply font-sans font-bold my-4 mx-2;
+  }
+  .sign-up-btn-container {
+    @apply flex items-center justify-center bg-blue-300 rounded-xl;
   }
 }
