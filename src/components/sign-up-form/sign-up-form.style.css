@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-container {
+    @apply mx-2 my-4;
+  }
+}
+
+@layer base {
+  form {
+    @apply flex flex-col;
+  }
+}
