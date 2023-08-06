@@ -6,6 +6,7 @@ import {
 } from "../../utils/firebase/firebase.utils";
 
 import "./sign-up-form.style.css";
+import EmailPasswordForm from "../email-password-form/email-password-form.component";
 
 const defaultFormField = {
   displayName: "",
@@ -53,59 +54,12 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="form-container">
-      <h1 className="form-title">Sign Up With Email and Password</h1>
-      <form className="sign-in-form" onSubmit={handleSubmit}>
-        <div className="field-container">
-          <label className="label-name">Display Name</label>
-          <input
-            className="inp"
-            type="text"
-            required
-            onChange={handleChange}
-            name="displayName"
-            value={displayName}
-          />
-        </div>
-        <div className="field-container">
-          <label className="label-name">Email</label>
-          <input
-            className="inp"
-            type="text"
-            required
-            onChange={handleChange}
-            name="email"
-            value={email}
-          />
-        </div>
-        <div className="field-container">
-          <label className="label-name">Password</label>
-          <input
-            className="inp"
-            type="text"
-            required
-            onChange={handleChange}
-            name="password"
-            value={password}
-          />
-        </div>
-        <div className="field-container">
-          <label className="label-name">Confirm Password</label>
-          <input
-            className="inp"
-            type="text"
-            required
-            onChange={handleChange}
-            name="confirmPassword"
-            value={confirmPassword}
-          />
-        </div>
-        <div className="sign-up-btn-container">
-          <button className="sign-up-btn" type="submit">
-            Sign Up
-          </button>
-        </div>
-      </form>
+    <div>
+      <EmailPasswordForm
+        form={formField}
+        submitHandler={handleSubmit}
+        changeHandler={handleChange}
+      />
     </div>
   );
 };
