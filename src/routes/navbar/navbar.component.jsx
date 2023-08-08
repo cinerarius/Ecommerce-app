@@ -14,7 +14,7 @@ const Navbar = () => {
           <a className="nav-link" href="/cart">
             Add to Cart
           </a>
-          <a className="nav-link" href="/signIn">
+          <a className="nav-link" href="/auth">
             Sign In
           </a>
         </div>

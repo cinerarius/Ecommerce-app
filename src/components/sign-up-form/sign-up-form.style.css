@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .sign-up-btn {
+    @apply font-sans font-bold text-white my-4 mx-2;
+  }
+}

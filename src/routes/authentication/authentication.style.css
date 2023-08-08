@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .auth-container {
+    @apply flex items-center justify-center flex-col md:flex-row md:space-x-20;
+  }
+}
