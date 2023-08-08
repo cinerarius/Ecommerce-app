@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
-  createUserdocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 
 import "./sign-in-form.style.css";
@@ -18,23 +17,17 @@ const SignInForm = () => {
   const [formField, setFormField] = useState(defaultFormField);
   const { email, password } = formField;
 
-  const resetFormField = () => {
-    setFormField(defaultFormField);
-  };
+  const resetFormField = () => {};
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserdocumentFromAuth(user);
+    await signInWithGooglePopup();
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await signInAuthUserWithEmailAndPassword(
-        email,
-        password
-      );
+      await signInAuthUserWithEmailAndPassword(email, password);
       resetFormField;
     } catch (error) {
       switch (error.code) {
@@ -79,9 +72,9 @@ const SignInForm = () => {
             name="password"
             value={password}
           />
-          <div className="flex-row">
+          <div className="flex flex-row items-center justify-center">
             <button
-              className="bg-blue-500 rounded-xl px-4 py-2 text-center font-sans font-bold text-white my-4 mx-2 "
+              className="bg-blue-500 rounded-xl px-8 py-2 text-center font-sans font-bold text-white my-4 mx-2 "
               type="submit"
             >
               Sign In

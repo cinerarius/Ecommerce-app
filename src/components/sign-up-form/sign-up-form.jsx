@@ -19,9 +19,7 @@ const SignUpForm = () => {
   const [formField, setFormField] = useState(defaultFormField);
   const { displayName, email, password, confirmPassword } = formField;
 
-  const resetFormField = () => {
-    setFormField(defaultFormField);
-  };
+  const resetFormField = () => {};
 
   const handleSubmit = async (event) => {
     event.preventDefault();
