@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cart-dropdown-container {
+    @apply flex justify-center md:justify-end md:m-5;
+  }
+  .cart-dropdown-menu {
+    @apply absolute h-72 w-64 bg-slate-200 outline outline-1;
+  }
+  .card-item {
+    @apply h-72 w-60 overflow-scroll;
+  }
+  .checkout-btn {
+    @apply flex mx-auto mt-52 bg-slate-100 outline outline-1 px-4 py-2 hover:invert;
+  }
+}

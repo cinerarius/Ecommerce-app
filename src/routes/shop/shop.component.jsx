@@ -1,12 +1,20 @@
 import ProductCard from "../../components/product-card/product-card.component";
 import SHOP_DATA from "../../shop-data.json";
 
+import "./shop.style.css";
+
 const Shop = () => {
   return (
-    <div>
-      {SHOP_DATA.map((product) => (
-        <ProductCard key={product.key} product={product} />
-      ))}
+    <div className="product-card-list">
+      {SHOP_DATA.map((product) => {
+        return (
+          <ProductCard
+            className="product-card"
+            key={product.id}
+            product={product}
+          />
+        );
+      })}
     </div>
   );
 };

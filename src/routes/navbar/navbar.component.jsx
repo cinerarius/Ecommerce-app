@@ -1,5 +1,9 @@
 import { Link, Outlet } from "react-router-dom";
-import { Fragment, useContext } from "react";
+import { useState, Fragment, useContext } from "react";
+
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+
+import CardDropdown from "../../components/card-dropdown/card-dropdown.component";
 
 import { UserContext } from "../../context/user.context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
@@ -33,7 +37,11 @@ const Navbar = () => {
               Sign In
             </a>
           )}
+          <Link>
+            <CartIcon />
+          </Link>
         </div>
+        <CardDropdown />
       </header>
       <Outlet />
     </Fragment>

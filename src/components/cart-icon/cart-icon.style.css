@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cart-container {
+    @apply flex items-center justify-center;
+  }
+  .cart-logo {
+    @apply fill-slate-400 h-8 w-8;
+  }
+  .item-count {
+    @apply absolute mt-2;
+  }
+}

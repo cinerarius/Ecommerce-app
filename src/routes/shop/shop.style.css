@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .product-card-list {
+    @apply grid grid-cols-1 gap-10 p-10 md:grid-cols-3;
+  }
+}
