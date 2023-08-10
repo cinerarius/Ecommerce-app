@@ -4,7 +4,7 @@
 
 @layer components {
   .cart-container {
-    @apply flex items-center justify-center;
+    @apply flex items-center justify-center select-none;
   }
   .cart-logo {
     @apply fill-slate-400 h-8 w-8;
