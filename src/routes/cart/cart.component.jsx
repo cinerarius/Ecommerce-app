@@ -5,8 +5,13 @@ import { CartContext } from "../../context/cart.context";
 import "./cart.style.css";
 
 const Cart = () => {
-  const { cartItem, addItemsToCart, removeItemsFromCart, clearItemFromCart } =
-    useContext(CartContext);
+  const {
+    cartItem,
+    addItemsToCart,
+    removeItemsFromCart,
+    clearItemFromCart,
+    totalCartAmount,
+  } = useContext(CartContext);
 
   return (
     <div>
@@ -60,8 +65,7 @@ const Cart = () => {
         })}
       </div>
       <div className="total-container">
-        <span>Total:</span>
-        <span>$0</span>
+        <span className="total">Total : ${totalCartAmount}</span>
       </div>
     </div>
   );

@@ -24,9 +24,6 @@ const Navbar = () => {
           <h1 className="title">Ecommerce App</h1>
         </Link>
         <div className="navbar">
-          <a className="nav-link" href="/cart">
-            Add to Cart
-          </a>
           <a className="nav-link" href="/shop">
             Shop
           </a>

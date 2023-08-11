@@ -21,4 +21,10 @@
   .product-quantity {
     @apply flex items-center justify-center w-28;
   }
+  .total-container {
+    @apply flex justify-end m-4 my-40;
+  }
+  .total {
+    @apply font-sans font-semibold text-2xl;
+  }
 }
