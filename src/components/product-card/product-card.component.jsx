@@ -16,8 +16,12 @@ const ProductCard = ({ product }) => {
         <div className="product-card-container">
           <img className="product-image" src={imageUrl} alt={`${name}`} />
           <div className="details">
-            <h2 className="name">{name}</h2>
-            <p className="price">Price - ${price}</p>
+            <div className="flex justify-start">
+              <h2 className="card-name">{name}</h2>
+            </div>
+            <div className="flex justify-end">
+              <p className="price">Price - ${price}</p>
+            </div>
           </div>
           <button className="add-to-cart-btn" onClick={addProductToCart}>
             Add to Cart

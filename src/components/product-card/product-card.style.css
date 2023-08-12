@@ -4,19 +4,19 @@
 
 @layer components {
   .product-card-container {
-    @apply flex flex-col items-center justify-center;
+    @apply flex flex-col items-center;
   }
   .product-image {
     @apply object-cover h-72 w-72;
   }
   .details {
-    @apply flex flex-row gap-24;
+    @apply container w-72;
   }
-  .name {
-    @apply font-sans font-semibold text-xl;
+  .card-name {
+    @apply font-sans font-semibold text-2xl my-2;
   }
   .price {
-    @apply font-sans font-semibold text-lg;
+    @apply font-sans font-semibold text-lg m-4;
   }
   .add-to-cart-btn {
     @apply absolute font-sans font-semibold text-xl bg-slate-300 outline outline-1 py-4 px-10 mt-44 opacity-0 group-hover:opacity-75 hover:invert duration-200;
