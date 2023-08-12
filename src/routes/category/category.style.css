@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .category-container {
+    @apply grid grid-cols-1 md:grid-cols-4;
+  }
+}
