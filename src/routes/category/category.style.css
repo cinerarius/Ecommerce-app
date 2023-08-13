@@ -6,4 +6,7 @@
   .category-container {
     @apply grid grid-cols-1 md:grid-cols-4;
   }
+  .category-title {
+    @apply font-sans font-bold text-2xl m-6;
+  }
 }

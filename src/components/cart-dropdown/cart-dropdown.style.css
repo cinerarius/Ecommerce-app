@@ -7,7 +7,7 @@
     @apply flex justify-center md:justify-end md:mx-5;
   }
   .cart-dropdown-menu {
-    @apply absolute h-72 w-64 bg-slate-200 outline outline-1 overflow-scroll;
+    @apply absolute h-72 w-64 bg-slate-200 outline outline-1 overflow-x-auto;
   }
   .cart-item {
     @apply flex;
