@@ -5,16 +5,19 @@ const categories = [
     id: 1,
     title: "Hats",
     route: "shop/hats",
+    imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
   },
   {
     id: 2,
     title: "Sneakers",
     route: "shop/sneakers",
+    imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
   },
   {
     id: 3,
     title: "Jackets",
     route: "shop/jackets",
+    imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
   },
 ];
 
