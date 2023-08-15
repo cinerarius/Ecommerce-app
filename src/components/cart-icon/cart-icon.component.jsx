@@ -11,7 +11,7 @@ const CartIcon = () => {
     <div className="cart-container" onClick={toggleIsCartOpen}>
       <img
         className="cart-logo"
-        src="../../src/assets/shopping-bag.svg"
+        src="../../../assets/shopping-bag.svg"
         alt=""
       />
       <span className="item-count">{totalQuantity}</span>
