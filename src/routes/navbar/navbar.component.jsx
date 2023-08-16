@@ -7,7 +7,7 @@ import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component
 
 import { CartContext } from "../../context/cart.context";
 import { UserContext } from "../../context/user.context";
-import { signOutUser } from "../../utils/firebase/firebase.utils";
+import { signOutUser } from "../../../public/utils/firebase/firebase.utils";
 import "./navbar.style.css";
 
 const Navbar = () => {
