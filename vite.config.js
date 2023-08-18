@@ -6,10 +6,5 @@ export default defineConfig({
   plugins: [react()],
   build: {
     assetsDir: "assets",
-    manifest: true,
-    rollupOptions: {
-      // overwrite default .html entry
-      input: "/src/main.jsx",
-    },
   },
 });
