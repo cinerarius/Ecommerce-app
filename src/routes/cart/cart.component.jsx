@@ -41,20 +41,20 @@ const Cart = () => {
               <h1 className="product-name">{name}</h1>
               <div className="product-quantity">
                 <img
-                  src="../../src/assets/arrow_left.svg"
+                  src="../../../assets/arrow_left.svg"
                   onClick={() => removeItemsFromCart(cartItem)}
                 ></img>
                 <br />
                 <span>{quantity}</span>
                 <br />
                 <img
-                  src="../../src/assets/arrow_right.svg"
+                  src="../../../assets/arrow_right.svg"
                   onClick={() => addItemsToCart(cartItem)}
                 ></img>
               </div>
               <span className="w-24">${price}</span>
               <img
-                src="../../src/assets/cancel.svg"
+                src="../../../assets/cancel.svg"
                 onClick={() => {
                   clearItemFromCart(cartItem);
                 }}
