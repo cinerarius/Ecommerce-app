@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
-} from "../../../public/utils/firebase/firebase.utils";
+} from "../../utils/firebase/firebase.utils";
 
 import "./sign-in-form.style.css";
 import FormInput from "../form-input/form-input.component";
